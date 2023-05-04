@@ -2,7 +2,13 @@
 
 ## Setup
 
-Build the images with the following commands:
+1) Download the OpenVPN config from HackTheBox and place it inside this folder
+
+![HackTheBox screenshot](vpn.png)
+
+2) Rename it to `client.ovpn`
+
+3) Build the images with the following commands:
 
 ```
 docker build -f images/crocodile/Dockerfile -t crocodile .
