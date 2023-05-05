@@ -21,7 +21,7 @@ jobs:
     - name: Push Docker image
       run: |
         
-        image_tag="${{ env.IMAGE_NAME }}:$(date +%s)"
+        image_tag="${{ vars.IMAGE_NAME }}:$(date +%s)"
         docker build . --file Dockerfile --tag "$image_tag"
         echo -n "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${GHCR_USER} --password-stdin
         docker push ${image_tag}
