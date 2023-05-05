@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 env:
-  IMAGE_NAME: jberny/crocodile
+  IMAGE_NAME: ghcr.io/jberny/crocodile
   GHCR_USER: JBerny
 
 jobs:
@@ -25,4 +25,4 @@ jobs:
         image_tag="${IMAGE_NAME}:$(date +%s)"
         docker build . --file Dockerfile --tag "$image_tag"
         echo -n "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${GHCR_USER} --password-stdin
-        docker push ghcr.io/${image_tag}
+        docker push ${image_tag}
