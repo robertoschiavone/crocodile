@@ -1,4 +1,4 @@
-[![Docker Image CI](https://github.com/robertoschiavone/crocodile/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/JBerny/crocodile/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/robertoschiavone/crocodile/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/robertoschiavone/crocodile/actions/workflows/docker-image.yml)
 
 # crocodile
 
