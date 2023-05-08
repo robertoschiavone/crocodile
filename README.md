@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/robertoschiavone/crocodile/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/robertoschiavone/crocodile/actions/workflows/docker-image.yml)
+
 # crocodile
 
 ## Setup
